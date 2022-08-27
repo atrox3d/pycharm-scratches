@@ -18,6 +18,7 @@ class Opt:
     def __getattr__(self, item):
         return None
 
+
 opt = Opt()
 opt.x = 2
 
