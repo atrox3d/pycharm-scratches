@@ -1,4 +1,4 @@
-class Memo():
+class Memo:
     def __setattr__(self, key, value):
         print(f"__setattr__({key=}, {value=})")
         return super().__setattr__(key, value)
