@@ -12,6 +12,8 @@ print(lst)
 
 
 # dynamic random sublists, comprehension version
-print(
-    [[val for val in range(rnd.randint(1, 5))] for rep in range(rnd.randint(1, 5))]
-)
+nested_list = [[val for val in range(rnd.randint(1, 5))] for rep in range(rnd.randint(1, 5))]
+print(f'{nested_list=}')
+
+flat_list = [item for sublist in nested_list for item in sublist]
+print(f'{flat_list=}')
