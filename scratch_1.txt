@@ -1,0 +1,5 @@
+git add tests/*.py
+git commit -m "test: add additional tests for all modules"
+git add src/a3dpycounts/plotting.py
+git commit -m "fix: check input type to plot_words function"
+git push
