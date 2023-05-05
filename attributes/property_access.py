@@ -1,9 +1,8 @@
-from property_access import PropertyAccess
+CLS = 'PropertyAccess'.upper()
 
-CLS = 'AttributeAccess'.upper()
 
 print(f'{CLS:>20} | BEGIN class definition')
-class AttributeAccess:
+class PropertyAccess:
     def __getattribute__(self, item):
         """
         gets obj.attr
@@ -43,7 +42,25 @@ class AttributeAccess:
         # vars(self)[key] = value
         self.__dict__[key] = value
 
-    print(f'{CLS:>20} | prop = PropertyAccess() ...')
-    prop = PropertyAccess()
+    def __set_name__(self, owner, name):
+        """
+        sets property name
+        """
+        print(f'{CLS:>20} | __set_name__({owner=}, {name=})')
+        # self.name = name
+
+    def __set__(self, instance, value):
+        """
+        not used
+        """
+        print(f'{CLS:>20} | __set__({instance=}, {value=})')
+        self.value = value
+
+    def __get__(self, instance, owner):
+        """
+        not used
+        """
+        print(f'{CLS:>20} | __get__({instance=}, {owner=})')
+        return self.value
 print(f'{CLS:>20} | END class definition')
 print()
