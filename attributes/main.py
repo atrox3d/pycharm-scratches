@@ -1,4 +1,4 @@
-from attribute_access import AttributeAccess
+from classes.attribute_access import AttributeAccess
 
 if __name__ == '__main__':
     MAIN = 'MAIN'
