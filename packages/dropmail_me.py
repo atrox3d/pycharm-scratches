@@ -12,10 +12,17 @@ def get_timestamp():
     return timestamp
 
 
+<<<<<<< HEAD
 def get_url(token='testing-0123456'):
     base_url = 'https://dropmail.me/api/graphql'
     # token = get_timestamp()
     # token = 'testing-0123456'
+=======
+def get_url(token='{TOKEN}'):
+    base_url = 'https://dropmail.me/api/graphql'
+    # token = get_timestamp()
+    # token = '{TOKEN}'
+>>>>>>> 4d6ca05982cde937099bc6474b5ded44ef05898e
     url = f'{base_url}/{token}'
     print(url)
     return url

@@ -20,3 +20,23 @@ class StringList(list):
             super().extend(other)
         else:
             super().extend(str(item) for item in other)
+<<<<<<< HEAD
+=======
+
+
+if __name__ == '__main__':
+    data = StringList([1, 2, 2, 4, 5])
+    print(data)
+
+    data.append(6)
+    print(data)
+
+    data.insert(0, 0)
+    print(data)
+
+    data.extend([7, 8, 9])
+    print(data)
+
+    data[3] = 3
+    print(data)
+>>>>>>> 4d6ca05982cde937099bc6474b5ded44ef05898e

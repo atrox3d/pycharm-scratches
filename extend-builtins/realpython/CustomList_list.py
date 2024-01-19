@@ -16,3 +16,27 @@ class CustomList(list):
     def for_each(self, func):
         for item in self:
             func(item)
+<<<<<<< HEAD
+=======
+
+
+if __name__ == '__main__':
+    words = CustomList(
+        [
+            "Hello,",
+            "Pythonista!",
+            "Welcome",
+            "to",
+            "Real",
+            "Python!"
+        ]
+    )
+
+    print(words.join())
+
+    print(words.map(str.upper))
+
+    print(words.filter(lambda word: word.startswith("Py")))
+
+    words.for_each(print)
+>>>>>>> 4d6ca05982cde937099bc6474b5ded44ef05898e

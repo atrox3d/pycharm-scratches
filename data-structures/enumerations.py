@@ -19,7 +19,11 @@ print()
 def angle(self):
     print(f"{id(self) = }")
     right_angle = 90.0
+<<<<<<< HEAD
     return right_angle * (self.value - 1)
+=======
+    return right_angle * (self.svalue - 1)
+>>>>>>> 4d6ca05982cde937099bc6474b5ded44ef05898e
 
 
 DirectionFunctional.angle = angle   # monkey patching

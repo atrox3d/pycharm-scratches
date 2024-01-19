@@ -2,4 +2,13 @@
 /.idea/
 /private/
 /secret/
+<<<<<<< HEAD
 
+=======
+/files/
+todos.txt
+/build/
+/dist/
+/gui.spec
+__pycache__/
+>>>>>>> 4d6ca05982cde937099bc6474b5ded44ef05898e

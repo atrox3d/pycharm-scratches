@@ -6,11 +6,19 @@ BACKGROUND = Enum("Bg", "BG_BLACK BG_RED BG_GREEN BG_YELLOW BG_BLUE BG_MAGENTA B
 
 breakpoint()
 # light_dict = {f"LIGHT_{name[3:]}": (DarkLight.LIGHT.value, value.value) for name, value in Fg.__members__.items()}
+<<<<<<< HEAD
 ligh_dict = {f"{name[3:]}": f"\033[{DARK_LIGHT.LIGHT.value};{value.value}m" for name, value in FOREGROUND.__members__.items()}
 print(ligh_dict)
 #
 # darkcolors_dict = {f"DARK_{name[3:]}": (DarkLight.DARK.value, value.value) for name, value in Fg.__members__.items()}
 dark_dict = {f"{name[3:]}": f"\033[{DARK_LIGHT.DARK.value};{value.value}m" for name, value in FOREGROUND.__members__.items()}
+=======
+ligh_dict = {f"{name[3:]}": f"\033[{DARK_LIGHT.LIGHT.svalue};{value.svalue}m" for name, value in FOREGROUND.__members__.items()}
+print(ligh_dict)
+#
+# darkcolors_dict = {f"DARK_{name[3:]}": (DarkLight.DARK.value, value.value) for name, value in Fg.__members__.items()}
+dark_dict = {f"{name[3:]}": f"\033[{DARK_LIGHT.DARK.svalue};{value.svalue}m" for name, value in FOREGROUND.__members__.items()}
+>>>>>>> 4d6ca05982cde937099bc6474b5ded44ef05898e
 # print(darkcolors_dict)
 
 ANSI_LIGHT = Enum('AnsiLightColors', ligh_dict)
