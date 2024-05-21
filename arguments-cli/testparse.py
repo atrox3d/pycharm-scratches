@@ -2,8 +2,9 @@ import argparse
 import sys
 
 # parser.add_argument cheat-sheet
-# add_argument cheat-sheet
 # argparse add_argument cheat-sheet
+# argparse add_argument example
+# parser.add_argument example
 
 def get_parser():
     # create parser
