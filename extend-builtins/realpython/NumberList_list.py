@@ -28,8 +28,6 @@ class NumberList(list):
         raise TypeError(
             f"numeric value expected, got {type(value).__name__}"
         )
-<<<<<<< HEAD
-=======
 
 
 if __name__ == '__main__':
@@ -62,4 +60,3 @@ if __name__ == '__main__':
 
     numbers.extend([5.3, 6])
     print(numbers)
->>>>>>> 4d6ca05982cde937099bc6474b5ded44ef05898e

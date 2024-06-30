@@ -23,8 +23,6 @@ class StringList(UserList):
             self.data.extend(other)
         else:
             self.data.extend(str(item) for item in other)
-<<<<<<< HEAD
-=======
 
 
 if __name__ == '__main__':
@@ -42,4 +40,3 @@ if __name__ == '__main__':
 
     data[3] = 3
     print(data)
->>>>>>> 4d6ca05982cde937099bc6474b5ded44ef05898e

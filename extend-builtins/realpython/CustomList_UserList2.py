@@ -5,10 +5,6 @@
 
 from collections import UserList
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 4d6ca05982cde937099bc6474b5ded44ef05898e
 class CustomList(UserList):
     def join(self, separator=" "):
         return separator.join(str(item) for item in self.data)
@@ -22,8 +18,6 @@ class CustomList(UserList):
     def for_each(self, func):
         for item in self.data:
             func(item)
-<<<<<<< HEAD
-=======
 
 
 if __name__ == '__main__':
@@ -45,4 +39,3 @@ if __name__ == '__main__':
     print(words.filter(lambda word: word.startswith("Py")))
 
     words.for_each(print)
->>>>>>> 4d6ca05982cde937099bc6474b5ded44ef05898e
